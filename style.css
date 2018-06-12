@@ -54,12 +54,15 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    background: rgba(245, 245, 245, 0.97);
+    /* background: rgba(245, 245, 245, 0.97); */
+    background-color: #14233c;
+    box-shadow: 0px 1px 3px 0px rgba(255, 255, 255, 0.1);
 }
 
 .header.small {
     line-height: 50px;
-    box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
+    box-shadow: 0px 1px 3px 0px rgba(255, 255, 255, 0.1);
+    background-color: #14233c;
 }
 
 .header.small>.container>#logo {
@@ -70,10 +73,10 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: red;
+    /* background: red; */
     float: left;
-    height: 40px;
-    width: 170px;
+    height: 45px;
+    width: 220px;
     margin-left: 5px;
 }
 
@@ -90,8 +93,8 @@ ul.nav li {
 }
 
 ul.nav li a {
-    transition: color 0.2s linear;
-    font-size: 18px;
+    transition: color 0.08s linear;
+    font-size: 14px;
 }
 
 ul.nav li:hover a {
@@ -99,8 +102,9 @@ ul.nav li:hover a {
 }
 
 ul.nav li a {
-    padding: 21px;
-    color: initial;
+    padding: 18px;
+    /* color: initial; */
+    color: white;
     text-decoration: initial;
 }
 
@@ -108,9 +112,17 @@ ul.nav li a {
   Slider
 */
 
-.section .slider,
+/* .section .slider,
 .section .footer {
     background: #333;
+} */
+
+.section .slider {
+    background: linear-gradient(#14233c, #0D1B32)
+}
+
+.section .footer {
+    background: #14233c;
 }
 
 .slidercontent {
@@ -373,7 +385,8 @@ h2 {
     }
     .header {
         height: auto;
-        background: #eee;
+        /* background: #eee; */
+        background-color: #14233c;
     }
     #logo {
         position: initial;
@@ -389,7 +402,7 @@ h2 {
         margin: 0 auto;
     }
     ul.nav li {
-        float: initial;
+        float: inherit;
         display: inline-block;
     }
     .responsivegroup {
