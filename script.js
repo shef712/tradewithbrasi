@@ -18,3 +18,10 @@ $(document).ready(function () {
         $('.small-menu').slideUp(200);
     });
 });
+
+function hide_small_menu() {
+    var w = window.innerWidth;
+    if (w >= 768) {
+        $('.small-menu').css("display", "none");
+    };
+};
