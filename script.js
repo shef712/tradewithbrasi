@@ -8,3 +8,13 @@ window.onscroll = function () {
             el.classList.remove(className);
     }
 };
+
+$(document).ready(function () {
+    $('.menu_icon').click(function () {
+        $('.small-menu').slideToggle(50);
+    });
+
+    $(window).scroll(function (event) {
+        $('.small-menu').slideUp(200);
+    });
+});
